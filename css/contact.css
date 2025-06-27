@@ -433,3 +433,16 @@
     stroke-dashoffset: -351.86;
   }
 }
+
+@media screen and (min-width: 344px) and (max-width: 767px) {
+  .contact-wrapper {
+    height: 113vh;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    padding: 37px 2%;
+    background-color: #e0f7ff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px, rgba(0, 0, 0, 0.06) 0px 1px 2px;
+  }
+}
