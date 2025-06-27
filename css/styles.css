@@ -1,0 +1,274 @@
+/* ============================= */
+/* Base Reset + Common Styles   */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 0.94rem;
+}
+
+/* body {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+} */
+
+/* ============================= */
+/* Light Mode                   */
+/* ============================= */
+body:not(.dark-mode) {
+  background: linear-gradient(
+    90deg,
+    rgba(221, 241, 255, 1) 0%,
+    rgba(209, 242, 255, 1) 47%,
+    rgba(211, 241, 255, 1) 100%
+  );
+}
+
+/* ============================= */
+/* Dark Mode Styles             */
+/* ============================= */
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark-mode .container-fluid,
+body.dark-mode .background,
+body.dark-mode .btn-sm,
+body.dark-mode .dropdown-menu,
+body.dark-mode .sidebar li,
+body.dark-mode .sidebar .logo_details #btn,
+body.dark-mode .heading,
+body.dark-mode .projcard-innerbox {
+  background: #2b2b2b;
+}
+
+body.dark-mode .paragraphsection {
+  background: #3f3f40;
+}
+
+body.dark-mode .paragraphtext,
+body.dark-mode .paragraphtext1,
+body.dark-mode .paragraph-text,
+body.dark-mode .projcard-description,
+body.dark-mode .bold-heading,
+body.dark-mode .subtitle,
+body.dark-mode .heading h1,
+body.dark-mode .heading:hover h1,
+body.dark-mode footer {
+  color: white;
+}
+
+body.dark-mode .btt {
+  color: white;
+  border-color: white;
+}
+
+body.dark-mode .btt:hover {
+  background: #3f3f40;
+}
+
+body.dark-mode .flip-card-front,
+body.dark-mode .testimonial-bg {
+  background: #3f3f40;
+}
+
+body.dark-mode .testimonial .description,
+body.dark-mode .testimonial .title,
+body.dark-mode .testimonial .post {
+  color: white;
+}
+
+body.dark-mode .sidebar {
+  background: #666666;
+}
+
+body.dark-mode .sidebar li a {
+  background: none;
+}
+
+body.dark-mode .heading:hover {
+  background: #666666;
+}
+
+body.dark-mode .subheading {
+  background: linear-gradient(15deg, #e8f5ff, #74797d, #e8f5ff);
+}
+
+/* ============================= */
+/* Dark Mode Toggle Button      */
+/* ============================= */
+.dark-mode-toggle {
+  position: absolute;
+  top: 0.15rem;
+  right: 0.1rem;
+  display: inline-block;
+  border: 0.1rem solid #0084ff;
+  border-radius: 1.9rem;
+  height: 1.45rem;
+  width: 3rem;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.3125rem;
+  transition: background-color 0.3s;
+  height: 1.5rem;
+  width: 2.5rem;
+  left: 0.27rem;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label::after {
+  content: "";
+  position: absolute;
+  top: 0.1rem;
+  left: -0.1rem;
+  width: 1.025rem;
+  height: 1.015rem;
+  border-radius: 50%;
+  transition: left 0.3s;
+  background-color: #000;
+}
+
+.toggle-checkbox:checked + .toggle-label::after {
+  left: calc(100% - 1.3rem);
+  background-color: white;
+}
+
+.tooltipdarkmood {
+  visibility: hidden;
+  width: 3.4rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 1rem;
+  font-size: 1rem;
+  position: absolute;
+  z-index: 1;
+  bottom: -30%;
+  left: -40%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+/* ============================= */
+/* Responsive Media Queries     */
+/* ============================= */
+@media (max-width: 1040px) {
+  html {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 995px) {
+  html {
+    font-size: 0.87rem;
+  }
+}
+@media (max-width: 965px) {
+  html {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 940px) {
+  html {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 935px) {
+  html {
+    font-size: 0.83rem;
+  }
+}
+@media (max-width: 905px) {
+  html {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 880px) {
+  html {
+    font-size: 0.84rem;
+  }
+}
+@media (max-width: 840px) {
+  html {
+    font-size: 0.74rem;
+  }
+}
+@media (max-width: 820px) {
+  html {
+    font-size: 0.77rem;
+  }
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 0.715rem;
+  }
+}
+@media (max-width: 770px) {
+  html {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 730px) {
+  html {
+    font-size: 0.77rem;
+  }
+  .background {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 0.68rem;
+  }
+}
+@media (max-width: 650px) {
+  html {
+    font-size: 0.63rem;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 570px) {
+  html {
+    font-size: 0.57rem;
+  }
+}
+@media (max-width: 540px) {
+  html {
+    font-size: 0.55rem;
+  }
+}
+@media (max-width: 520px) {
+  html {
+    font-size: 0.52rem;
+  }
+}
+@media (max-width: 490px) {
+  html {
+    font-size: 0.47rem;
+  }
+}

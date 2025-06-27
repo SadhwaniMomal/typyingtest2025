@@ -1,0 +1,89 @@
+.tips-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: #38bcd6;
+  overflow: hidden;
+}
+
+.tips-header h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 1rem;
+  font-style: italic;
+  color: white;
+  transition: color 0.3s ease;
+  animation: slideDown 0.8s ease forwards;
+}
+
+.highlight-tips,
+.highlight-tricks {
+  color: #004f7c;
+}
+
+.tips-section {
+  width: 55%;
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  margin: 15px auto;
+}
+
+.tips-subheading {
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(15deg, #e8f5ff, #38bcd6, #e8f5ff);
+  padding: 15px;
+  color: aliceblue;
+}
+
+.tips-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 0 40px 1.5rem 40px;
+  color: #555;
+  font-family: "Poppins", serif;
+}
+
+.tips-image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.tips-image {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border-radius: 0.5rem;
+}
+
+.tips-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.tips-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 344px) and (max-width: 767px) {
+  .tips-section {
+    width: 95%;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin: 52px auto;
+  }
+}
